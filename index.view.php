@@ -26,7 +26,7 @@
 
         <?php endforeach; ?>
 
-    </ul> <br> <br> 
+    </ul> <br>
 
     <ul>
 
@@ -39,11 +39,43 @@
         </li>
 
         <li>
-            <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
+            <strong>Person Responsible: </strong> <?= $task['assigned_to']; ?>
         </li>
 
         <li>
-            <strong>Status: </strong> <?= $task['Complited'] ? 'Complite' : 'Incomplite'; ?>
+
+            <strong>Status: </strong> 
+
+            <?php if($task['complited']) : ?>
+                <span class="icon">&#9989</span>
+            <?php else : ?>
+                <span class="icon">incomplited</span>
+            <?php endif; ?>
+
+        </li>
+
+        <li>
+
+                <strong>Did you find all articles?: </strong>
+
+                <?php if($task['find']) : ?>
+                    <span class="icon">&#10004</span>
+                <?php else : ?>
+                    <span class = "icon">&#10006</span>
+                <?php endif; ?>
+
+        </li>
+
+        <li>
+
+                    <strong>Did you have enough money?: </strong>
+
+                    <?php if($task['haveMoneyForAll']) : ?>
+                        <span class = "icon"> &#10062  </span>
+                    <?php else : ?>
+                        <span class = "icon"> &#10060  </span>
+                    <?php endif; ?>
+
         </li>
 
     </ul>

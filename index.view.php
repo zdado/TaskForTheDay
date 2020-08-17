@@ -44,13 +44,13 @@
 
         <li>
 
-            <strong>Status: </strong> 
+                <strong>Status: </strong> 
 
-            <?php if($task['complited']) : ?>
-                <span class="icon">&#9989</span>
-            <?php else : ?>
-                <span class="icon">incomplited</span>
-            <?php endif; ?>
+                <?php if($task['complited']) : ?>
+                    <span class="icon">&#9989</span>
+                <?php else : ?>
+                    <span class="icon">incomplited</span>
+                <?php endif; ?>
 
         </li>
 
@@ -68,13 +68,13 @@
 
         <li>
 
-                    <strong>Did you have enough money?: </strong>
+                <strong>Did you have enough money?: </strong>
 
-                    <?php if($task['haveMoneyForAll']) : ?>
-                        <span class = "icon"> &#10062  </span>
-                    <?php else : ?>
-                        <span class = "icon"> &#10060  </span>
-                    <?php endif; ?>
+                <?php if($task['haveMoneyForAll']) : ?>
+                    <span class = "icon"> &#10062  </span>
+                <?php else : ?>
+                    <span class = "icon"> &#10060  </span>
+                <?php endif; ?>
 
         </li>
 

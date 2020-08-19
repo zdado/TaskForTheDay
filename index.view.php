@@ -28,7 +28,7 @@
 
     </ul> <br>
 
-    <ul>
+    <ol>
 
         <li>
             <strong>Name: </strong> <?= $task['title']; ?>
@@ -78,8 +78,7 @@
 
         </li>
 
-    </ul>
-
+    </ol>
 
 </body>
 
